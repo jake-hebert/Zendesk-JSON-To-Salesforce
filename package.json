@@ -9,7 +9,7 @@
   "author": "jake",
   "license": "ISC",
   "dependencies": {
-    "line-by-line": "^0.1.6",
-    "node-salesforce": "^0.8.0"
+    "jsforce": "^1.9.3",
+    "line-by-line": "^0.1.6"
   }
 }

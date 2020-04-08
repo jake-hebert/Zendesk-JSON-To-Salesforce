@@ -1,0 +1,673 @@
+{
+  "url": "https://verbasoftware.zendesk.com/api/v2/tickets/10048.json",
+  "id": 10048,
+  "external_id": null,
+  "via": {
+    "channel": "email",
+    "source": {
+      "from": { "address": "raymondsmith@clayton.edu", "name": "Raymondsmith" },
+      "to": {
+        "name": "VitalSource Technologies",
+        "address": "support@verbasoftware.com"
+      },
+      "rel": null
+    },
+    "id": 4
+  },
+  "created_at": "2015-01-05T15:54:42.000Z",
+  "updated_at": "2016-07-07T22:04:57.000Z",
+  "type": "problem",
+  "subject": "COMPETE (Bug) / Competitiveness Chart Spinning Wheels",
+  "raw_subject": "COMPETE (Bug) / Competitiveness Chart Spinning Wheels",
+  "description": "Happy New Year!\n\nOn the dashboard, my competitiveness chart seems to constantly spin without offering an actual chart. I normally use Chrome, but I also tried IE. No luck.\n\nR. Todd Smith, CCR\n\nDirector of Campus Store Services\n\nThe Loch Shop @ Clayton State University\n\n2000 Clayton State Blvd., Edgewater Hall\n\nMorrow GA 30260\n\np) 678-466-4220; f) 678-466-4214\n\nwww.ishoplochshop.com (http://www.ishoplochshop.com/)\n\n“LIKE” US ON FACEBOOK:\n\nhttp://www.facebook.com/pages/The-Loch-Shop/166864463376163",
+  "priority": "normal",
+  "status": "closed",
+  "follower_ids": [],
+  "email_cc_ids": [],
+  "forum_topic_id": null,
+  "problem_id": null,
+  "has_incidents": false,
+  "is_public": true,
+  "due_at": null,
+  "tags": [
+    "chart",
+    "chrome",
+    "clayton",
+    "compete",
+    "compete__general",
+    "competitiveness_chart",
+    "dashboard",
+    "nebraska",
+    "return_to_marissa"
+  ],
+  "custom_fields": [
+    { "id": 24330089, "value": "compete__general" },
+    { "id": 21023071, "value": "" },
+    { "id": 21114815, "value": "" },
+    { "id": 24137665, "value": null },
+    { "id": 24271449, "value": null },
+    { "id": 25060883, "value": null },
+    { "id": 360016965151, "value": null },
+    { "id": 360020204612, "value": null },
+    { "id": 25393126, "value": null }
+  ],
+  "satisfaction_rating": null,
+  "sharing_agreement_ids": [],
+  "fields": [
+    { "id": 24330089, "value": "compete__general" },
+    { "id": 21023071, "value": "" },
+    { "id": 21114815, "value": "" },
+    { "id": 24137665, "value": null },
+    { "id": 24271449, "value": null },
+    { "id": 25060883, "value": null },
+    { "id": 360016965151, "value": null },
+    { "id": 360020204612, "value": null },
+    { "id": 25393126, "value": null }
+  ],
+  "followup_ids": [],
+  "ticket_form_id": null,
+  "brand_id": 81064,
+  "satisfaction_probability": null,
+  "metric_set": {
+    "url": "https://verbasoftware.zendesk.com/api/v2/ticket_metrics/652478335.json",
+    "id": 652478335,
+    "ticket_id": 10048,
+    "created_at": "2015-01-05T15:54:42.000Z",
+    "updated_at": "2016-07-05T21:12:11.000Z",
+    "group_stations": 3,
+    "assignee_stations": 2,
+    "reopens": 0,
+    "replies": 2,
+    "assignee_updated_at": "2016-07-05T21:12:11.000Z",
+    "requester_updated_at": "2015-01-08T16:35:20.000Z",
+    "status_updated_at": "2016-07-07T22:04:57.000Z",
+    "initially_assigned_at": "2015-01-05T16:19:22.000Z",
+    "assigned_at": "2016-07-05T21:12:11.000Z",
+    "solved_at": "2016-07-05T21:12:11.000Z",
+    "latest_comment_added_at": "2016-07-05T21:12:11.000Z",
+    "reply_time_in_minutes": { "calendar": 25, "business": 25 },
+    "first_resolution_time_in_minutes": {
+      "calendar": 787997,
+      "business": 787997
+    },
+    "full_resolution_time_in_minutes": {
+      "calendar": 787997,
+      "business": 787997
+    },
+    "agent_wait_time_in_minutes": { "calendar": 0, "business": 0 },
+    "requester_wait_time_in_minutes": {
+      "calendar": 787998,
+      "business": 787998
+    },
+    "on_hold_time_in_minutes": { "calendar": 0, "business": 0 }
+  },
+  "dates": {
+    "assignee_updated_at": "2016-07-05T21:12:11.000Z",
+    "requester_updated_at": "2015-01-08T16:35:20.000Z",
+    "status_updated_at": "2016-07-07T22:04:57.000Z",
+    "initially_assigned_at": "2015-01-05T16:19:22.000Z",
+    "assigned_at": "2016-07-05T21:12:11.000Z",
+    "solved_at": "2016-07-05T21:12:11.000Z",
+    "latest_comment_added_at": "2016-07-05T21:12:11.000Z"
+  },
+  "allow_channelback": false,
+  "allow_attachments": true,
+  "generated_timestamp": 1467929097,
+  "submitter": {
+    "id": 426904883,
+    "url": "https://verbasoftware.zendesk.com/api/v2/users/426904883.json",
+    "name": "Raymondsmith",
+    "email": "raymondsmith@clayton.edu",
+    "created_at": "2013-07-18T15:38:40.000Z",
+    "updated_at": "2014-09-05T13:56:15.000Z",
+    "time_zone": "Pacific Time (US \u0026 Canada)",
+    "iana_time_zone": "America/Los_Angeles",
+    "phone": null,
+    "shared_phone_number": null,
+    "photo": null,
+    "locale_id": 1,
+    "locale": "en-US",
+    "organization_id": 21703483,
+    "role": "end-user",
+    "verified": false,
+    "external_id": null,
+    "tags": [],
+    "alias": null,
+    "active": true,
+    "shared": false,
+    "shared_agent": false,
+    "last_login_at": null,
+    "two_factor_auth_enabled": false,
+    "signature": null,
+    "details": null,
+    "notes": null,
+    "role_type": null,
+    "custom_role_id": null,
+    "moderator": false,
+    "ticket_restriction": "requested",
+    "only_private_comments": false,
+    "restricted_agent": true,
+    "suspended": false,
+    "chat_only": false,
+    "default_group_id": null,
+    "report_csv": false,
+    "user_fields": { "agent_ooo": false, "system::embeddable_last_seen": null }
+  },
+  "requester": {
+    "id": 426904883,
+    "url": "https://verbasoftware.zendesk.com/api/v2/users/426904883.json",
+    "name": "Raymondsmith",
+    "email": "raymondsmith@clayton.edu",
+    "created_at": "2013-07-18T15:38:40.000Z",
+    "updated_at": "2014-09-05T13:56:15.000Z",
+    "time_zone": "Pacific Time (US \u0026 Canada)",
+    "iana_time_zone": "America/Los_Angeles",
+    "phone": null,
+    "shared_phone_number": null,
+    "photo": null,
+    "locale_id": 1,
+    "locale": "en-US",
+    "organization_id": 21703483,
+    "role": "end-user",
+    "verified": false,
+    "external_id": null,
+    "tags": [],
+    "alias": null,
+    "active": true,
+    "shared": false,
+    "shared_agent": false,
+    "last_login_at": null,
+    "two_factor_auth_enabled": false,
+    "signature": null,
+    "details": null,
+    "notes": null,
+    "role_type": null,
+    "custom_role_id": null,
+    "moderator": false,
+    "ticket_restriction": "requested",
+    "only_private_comments": false,
+    "restricted_agent": true,
+    "suspended": false,
+    "chat_only": false,
+    "default_group_id": null,
+    "report_csv": false,
+    "user_fields": { "agent_ooo": false, "system::embeddable_last_seen": null }
+  },
+  "assignee": {
+    "id": 348321015,
+    "url": "https://verbasoftware.zendesk.com/api/v2/users/348321015.json",
+    "name": "Marissa Djafroodi",
+    "email": "marissa.djafroodi@verbasoftware.com",
+    "created_at": "2014-08-04T22:02:01.000Z",
+    "updated_at": "2020-04-02T16:49:02.000Z",
+    "time_zone": "Pacific Time (US \u0026 Canada)",
+    "iana_time_zone": "America/Los_Angeles",
+    "phone": null,
+    "shared_phone_number": null,
+    "photo": {
+      "url": "https://verbasoftware.zendesk.com/api/v2/attachments/53844629.json",
+      "id": 53844629,
+      "file_name": "batman.jpeg",
+      "content_url": "https://verbasoftware.zendesk.com/system/photos/5384/4629/batman.jpeg",
+      "mapped_content_url": "https://verbasoftware.zendesk.com/system/photos/5384/4629/batman.jpeg",
+      "content_type": "image/jpeg",
+      "size": 1618,
+      "width": 80,
+      "height": 64,
+      "inline": false,
+      "deleted": false,
+      "thumbnails": [
+        {
+          "url": "https://verbasoftware.zendesk.com/api/v2/attachments/53844639.json",
+          "id": 53844639,
+          "file_name": "batman_thumb.jpeg",
+          "content_url": "https://verbasoftware.zendesk.com/system/photos/5384/4629/batman_thumb.jpeg",
+          "mapped_content_url": "https://verbasoftware.zendesk.com/system/photos/5384/4629/batman_thumb.jpeg",
+          "content_type": "image/jpeg",
+          "size": 1615,
+          "width": 32,
+          "height": 26,
+          "inline": false,
+          "deleted": false
+        }
+      ]
+    },
+    "locale_id": 1,
+    "locale": "en-US",
+    "organization_id": 21503848,
+    "role": "admin",
+    "verified": true,
+    "external_id": "compete/1702",
+    "tags": [],
+    "alias": "",
+    "active": true,
+    "shared": false,
+    "shared_agent": false,
+    "last_login_at": "2020-04-02T16:48:57.000Z",
+    "two_factor_auth_enabled": null,
+    "signature": "Best,\n\nMarissa Djafroodi\nProduct Manager\nVerba | VitalSource\nmarissa.djafroodi@verbasoftware.com\n415.738.2374\n\nNeed help?  Visit our [HelpDesk](https://verbasoftware.zendesk.com/hc/en-us)",
+    "details": "",
+    "notes": "",
+    "role_type": null,
+    "custom_role_id": null,
+    "moderator": true,
+    "ticket_restriction": null,
+    "only_private_comments": false,
+    "restricted_agent": false,
+    "suspended": false,
+    "chat_only": false,
+    "default_group_id": 20187058,
+    "report_csv": true,
+    "user_fields": {
+      "agent_ooo": false,
+      "system::embeddable_last_seen": "2020-03-04T00:00:00+00:00"
+    }
+  },
+  "collaborator": [],
+  "recipient": "support@verbasoftware.com",
+  "group": {
+    "url": "https://verbasoftware.zendesk.com/api/v2/groups/20187058.json",
+    "id": 20187058,
+    "name": "Traditional",
+    "description": "",
+    "default": false,
+    "deleted": false,
+    "created_at": "2012-03-25T23:30:56.000Z",
+    "updated_at": "2019-07-01T01:33:03.000Z"
+  },
+  "organization": {
+    "url": "https://verbasoftware.zendesk.com/api/v2/organizations/21703483.json",
+    "id": 21703483,
+    "name": "The Loch Shop at Clayton State University",
+    "shared_tickets": true,
+    "shared_comments": true,
+    "external_id": null,
+    "created_at": "2012-06-21T01:39:14.000Z",
+    "updated_at": "2016-04-28T16:25:25.000Z",
+    "domain_names": ["clayton.edu", "mail.clayton.edu"],
+    "details": "",
+    "notes": "",
+    "group_id": 20187058,
+    "tags": ["clayton", "nebraska", "vbc_2016"],
+    "organization_fields": {
+      "account_owner": null,
+      "account_status": null,
+      "account_subtype": null,
+      "account_type": null,
+      "athens_id": null,
+      "city": null,
+      "country": null,
+      "customer_success_manager": null,
+      "iped_id": null,
+      "isni_id": null,
+      "manage_id": null,
+      "ofr_id": null,
+      "post_code": null,
+      "ringgold_alt_name": null,
+      "ringgold_economic_model": null,
+      "ringgold_id": null,
+      "ringgold_level": null,
+      "ringgold_organization": null,
+      "ringgold_parent_id": null,
+      "ringgold_reach": null,
+      "ringgold_staff_size": null,
+      "ringgold_subtype": null,
+      "ringgold_type": null,
+      "salesforce_id": null,
+      "state": null
+    }
+  },
+  "comments": [
+    {
+      "id": 16210815865,
+      "type": "Comment",
+      "author_id": 426904883,
+      "body": "Happy New Year!\n\nOn the dashboard, my competitiveness chart seems to constantly spin without offering an actual chart. I normally use Chrome, but I also tried IE. No luck.\n\nR. Todd Smith, CCR\n\nDirector of Campus Store Services\n\nThe Loch Shop @ Clayton State University\n\n2000 Clayton State Blvd., Edgewater Hall\n\nMorrow GA 30260\n\np) 678-466-4220; f) 678-466-4214\n\nwww.ishoplochshop.com (http://www.ishoplochshop.com/)\n\n“LIKE” US ON FACEBOOK:\n\nhttp://www.facebook.com/pages/The-Loch-Shop/166864463376163",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003e\u003cp dir=\"auto\"\u003eHappy New Year!\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eOn the dashboard, my competitiveness chart seems to constantly spin without offering an actual chart. I normally use Chrome, but I also tried IE. No luck.\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eR. Todd Smith, CCR\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eDirector of Campus Store Services\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eThe Loch Shop @ Clayton State University\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003e2000 Clayton State Blvd., Edgewater Hall\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eMorrow GA 30260\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003ep) 678-466-4220; f) 678-466-4214\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003e\u003ca href=\"http://www.ishoplochshop.com\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003ewww.ishoplochshop.com\u003c/a\u003e (\u003ca href=\"http://www.ishoplochshop.com/\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003ehttp://www.ishoplochshop.com/\u003c/a\u003e)\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003e“LIKE” US ON FACEBOOK:\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003e\u003ca href=\"http://www.facebook.com/pages/The-Loch-Shop/166864463376163\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003ehttp://www.facebook.com/pages/The-Loch-Shop/166864463376163\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e",
+      "plain_body": "Happy New Year! \n\n On the dashboard, my competitiveness chart seems to constantly spin without offering an actual chart. I normally use Chrome, but I also tried IE. No luck. \n\n R. Todd Smith, CCR \n\n Director of Campus Store Services \n\n The Loch Shop @ Clayton State University \n\n 2000 Clayton State Blvd., Edgewater Hall \n\n Morrow GA 30260 \n\n p) 678-466-4220; f) 678-466-4214 \n\n www.ishoplochshop.com (http://www.ishoplochshop.com/) \n\n “LIKE” US ON FACEBOOK: \n\n http://www.facebook.com/pages/The-Loch-Shop/166864463376163",
+      "public": true,
+      "attachments": [
+        {
+          "url": "https://verbasoftware.zendesk.com/api/v2/attachments/573611165.json",
+          "id": 573611165,
+          "file_name": "image003.jpg",
+          "content_url": "https://verbasoftware.zendesk.com/attachments/token/5VEpqhdu0Hkcw1Wq8zPtGfad2/?name=image003.jpg",
+          "mapped_content_url": "https://verbasoftware.zendesk.com/attachments/token/5VEpqhdu0Hkcw1Wq8zPtGfad2/?name=image003.jpg",
+          "content_type": "image/jpeg",
+          "size": 106746,
+          "width": null,
+          "height": null,
+          "inline": false,
+          "deleted": false,
+          "thumbnails": [
+            {
+              "url": "https://verbasoftware.zendesk.com/api/v2/attachments/556942169.json",
+              "id": 556942169,
+              "file_name": "image003_thumb.jpg",
+              "content_url": "https://verbasoftware.zendesk.com/attachments/token/nrWY1g5vHS5aK3LoTo1LUmpS6/?name=image003_thumb.jpg",
+              "mapped_content_url": "https://verbasoftware.zendesk.com/attachments/token/nrWY1g5vHS5aK3LoTo1LUmpS6/?name=image003_thumb.jpg",
+              "content_type": "image/jpeg",
+              "size": 106746,
+              "width": 80,
+              "height": 42,
+              "inline": false,
+              "deleted": false
+            }
+          ]
+        }
+      ],
+      "audit_id": 16210815855,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "email",
+        "source": {
+          "from": {
+            "address": "raymondsmith@clayton.edu",
+            "name": "Raymondsmith",
+            "original_recipients": [
+              "raymondsmith@clayton.edu",
+              "support@verbasoftware.com"
+            ]
+          },
+          "to": {
+            "name": "VitalSource Technologies",
+            "address": "support@verbasoftware.com"
+          },
+          "rel": null
+        }
+      },
+      "metadata": {
+        "system": {
+          "message_id": "\u003cCY1PR0201MB0859E6F050DCD114604B401BCB580@CY1PR0201MB0859.namprd02.prod.outlook.com\u003e",
+          "ip_address": "25.160.142.18",
+          "raw_email_identifier": "148759/fefe00d836ed14182b94f3afe7278e9f6d101e60-157772.eml",
+          "location": "United Kingdom",
+          "latitude": 51.5,
+          "longitude": -0.129999999999995
+        },
+        "custom": {},
+        "suspension_type_id": null
+      },
+      "created_at": "2015-01-05T15:54:42.000Z"
+    },
+    {
+      "id": 15409719079,
+      "type": "Comment",
+      "author_id": 348321015,
+      "body": "Hi Todd,\n\nI see exactly what you mean and it looks like this is a bug.  I am going to pass this over to our tech team so they can take a look into what is happening here.\n\nI will let you know as soon as I hear back from them.  In the meantime, let me know if you need anything else.\n\nBest,\n\nMarissa Djafroodi\nCustomer Support Analyst\nVerba Software\nmarissa.djafroodi@verbasoftware.com\n415.738.2374\n\nBy the way, just a reminder, the Inaugural Textbook Affordability Conference and our Verba Boot Camp are coming up. For information on attendance, please see the following here:\n\nVBC website: http://www.verbasoftware.com/vbc2015\n\nVBC registration: https://www.regonline.com/Register/Checkin.aspx?EventID=1649245\n\nTAC website: http://www.tac2015.com/\n\nTAC registation: https://www.regonline.com/Register/Checkin.aspx?EventId=1648727\n\nPlease note that hotel rooms are booking up fast and the ICBA $169/night rate at the Sheraton will expire by January 7th, so book your hotel here, using group code: ICBA.\n\nIf there are any questions or issues with booking or registration, please e-mail\n\nbrooke.spreckman@verbasoftware.com.",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003e\u003cp dir=\"auto\"\u003eHi Todd,\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eI see exactly what you mean and it looks like this is a bug.  I am going to pass this over to our tech team so they can take a look into what is happening here.\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eI will let you know as soon as I hear back from them.  In the meantime, let me know if you need anything else.\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eBest,\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eMarissa Djafroodi\u003cbr\u003e\nCustomer Support Analyst\u003cbr\u003e\nVerba Software\u003cbr\u003e\n\u003ca href=\"mailto:marissa.djafroodi@verbasoftware.com\" rel=\"noreferrer\"\u003emarissa.djafroodi@verbasoftware.com\u003c/a\u003e\u003cbr\u003e\n415.738.2374\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eBy the way, just a reminder, the Inaugural Textbook Affordability Conference and our Verba Boot Camp are coming up. For information on attendance, please see the following here:\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eVBC website:\u0026nbsp;\u003ca href=\"http://www.verbasoftware.com/vbc2015\" rel=\"noreferrer\"\u003ehttp://www.verbasoftware.com/vbc2015\u003c/a\u003e\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eVBC\u0026nbsp;registration:\u0026nbsp;\u003ca href=\"https://www.regonline.com/Register/Checkin.aspx?EventID=1649245\" rel=\"noreferrer\"\u003ehttps://www.regonline.com/Register/Checkin.aspx?EventID=1649245\u003c/a\u003e\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eTAC website:\u0026nbsp;\u003ca href=\"http://www.tac2015.com/\" rel=\"noreferrer\"\u003ehttp://www.tac2015.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eTAC registation:\u0026nbsp;\u003ca href=\"https://www.regonline.com/Register/Checkin.aspx?EventId=1648727\" rel=\"noreferrer\"\u003ehttps://www.regonline.com/Register/Checkin.aspx?EventId=1648727\u003c/a\u003e\u003c/p\u003e\n\u003cp dir=\"auto\"\u003ePlease note that hotel rooms are booking up fast and the ICBA $169/night rate\u0026nbsp;at the Sheraton\u0026nbsp;will expire by\u0026nbsp;January 7th, so\u0026nbsp;book your hotel\u0026nbsp;here, using group code: ICBA.\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eIf there are any questions or issues with booking or registration, please e-mail\u003c/p\u003e\n\u003cp dir=\"auto\"\u003e\u003ca href=\"mailto:brooke.spreckman@verbasoftware.com\" rel=\"noreferrer\"\u003ebrooke.spreckman@verbasoftware.com\u003c/a\u003e.\u003c/p\u003e\u003c/div\u003e",
+      "plain_body": "Hi Todd, \n I see exactly what you mean and it looks like this is a bug.  I am going to pass this over to our tech team so they can take a look into what is happening here. \n I will let you know as soon as I hear back from them.  In the meantime, let me know if you need anything else. \n Best, \n Marissa Djafroodi\n\nCustomer Support Analyst\n\nVerba Software\n\nmarissa.djafroodi@verbasoftware.com\n\n415.738.2374 \n By the way, just a reminder, the Inaugural Textbook Affordability Conference and our Verba Boot Camp are coming up. For information on attendance, please see the following here: \n VBC website:\u0026nbsp;http://www.verbasoftware.com/vbc2015 \n VBC\u0026nbsp;registration:\u0026nbsp;https://www.regonline.com/Register/Checkin.aspx?EventID=1649245 \n TAC website:\u0026nbsp;http://www.tac2015.com/ \n TAC registation:\u0026nbsp;https://www.regonline.com/Register/Checkin.aspx?EventId=1648727 \n Please note that hotel rooms are booking up fast and the ICBA $169/night rate\u0026nbsp;at the Sheraton\u0026nbsp;will expire by\u0026nbsp;January 7th, so\u0026nbsp;book your hotel\u0026nbsp;here, using group code: ICBA. \n If there are any questions or issues with booking or registration, please e-mail \n brooke.spreckman@verbasoftware.com.",
+      "public": true,
+      "attachments": [],
+      "audit_id": 15409719069,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "web",
+        "source": { "from": {}, "to": {}, "rel": null }
+      },
+      "metadata": {
+        "system": {
+          "client": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36",
+          "ip_address": "208.90.213.211",
+          "location": "San Francisco, CA, United States",
+          "latitude": 37.7758,
+          "longitude": -122.4128
+        },
+        "custom": {}
+      },
+      "created_at": "2015-01-05T16:19:22.000Z"
+    },
+    {
+      "id": 15410229389,
+      "type": "Comment",
+      "author_id": 348321015,
+      "body": "==CONTEXT==\n\nProduct:  Compete\nCompete login/Collect URL:  clayton (but also true for all users)\nTerm/Catalog: Spring 2015 (Auto)\n\nhttps://www.verbacompete.com/admin/user/268/catalog/9132?redirect_to=https%3A%2F%2Fwww.verbacompete.com%2Fdashboard\n\n\n==ISSUE==\nWhen a user navigates to the Dashboard, the Competitiveness Chart spins its wheels and either does not load or it takes so long to load (almost a minute) they have moved on to another page/screen.  \n\n\n==USE CASE==\nAssuming the role of a user/client, create a step by step run through of EXACTLY how you create the issue:\n\n1. Log into Compete, user:  clayton\n2. Navigate to the Dashboard\n3. Wait for Competitiveness Chart to load\n\nEXPECTED RESULTS: \nThe chart would load within a reasonable amount of time\n\nACTUAL RESULTS: \nThe chart lags and does not load within a reasonable timeframe",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003e\u003cp dir=\"auto\"\u003e==CONTEXT==\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eProduct:  Compete\u003cbr\u003e\nCompete login/Collect URL:  clayton (but also true for all users)\u003cbr\u003e\nTerm/Catalog: Spring 2015 (Auto)\u003c/p\u003e\n\u003cp dir=\"auto\"\u003e\u003ca href=\"https://www.verbacompete.com/admin/user/268/catalog/9132?redirect_to=https%3A%2F%2Fwww.verbacompete.com%2Fdashboard\" rel=\"noreferrer\"\u003ehttps://www.verbacompete.com/admin/user/268/catalog/9132?redirect_to=https%3A%2F%2Fwww.verbacompete.com%2Fdashboard\u003c/a\u003e\u003c/p\u003e\n\u003cp dir=\"auto\"\u003e==ISSUE==\u003cbr\u003e\nWhen a user navigates to the Dashboard, the Competitiveness Chart spins its wheels and either does not load or it takes so long to load (almost a minute) they have moved on to another page/screen.\u003c/p\u003e\n\u003cp dir=\"auto\"\u003e==USE CASE==\u003cbr\u003e\nAssuming the role of a user/client, create a step by step run through of EXACTLY how you create the issue:\u003c/p\u003e\n\u003col type=\"1\" dir=\"auto\"\u003e\n\u003cli\u003eLog into Compete, user:  clayton\u003c/li\u003e\n\u003cli\u003eNavigate to the Dashboard\u003c/li\u003e\n\u003cli\u003eWait for Competitiveness Chart to load\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp dir=\"auto\"\u003eEXPECTED RESULTS: \u003cbr\u003e\nThe chart would load within a reasonable amount of time\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eACTUAL RESULTS: \u003cbr\u003e\nThe chart lags and does not load within a reasonable timeframe\u003c/p\u003e\u003c/div\u003e",
+      "plain_body": "==CONTEXT== \n Product:  Compete\n\nCompete login/Collect URL:  clayton (but also true for all users)\n\nTerm/Catalog: Spring 2015 (Auto) \n https://www.verbacompete.com/admin/user/268/catalog/9132?redirect_to=https%3A%2F%2Fwww.verbacompete.com%2Fdashboard \n ==ISSUE==\n\nWhen a user navigates to the Dashboard, the Competitiveness Chart spins its wheels and either does not load or it takes so long to load (almost a minute) they have moved on to another page/screen. \n ==USE CASE==\n\nAssuming the role of a user/client, create a step by step run through of EXACTLY how you create the issue: \n \n Log into Compete, user:  clayton \n Navigate to the Dashboard \n Wait for Competitiveness Chart to load \n \n EXPECTED RESULTS: \n\nThe chart would load within a reasonable amount of time \n ACTUAL RESULTS: \n\nThe chart lags and does not load within a reasonable timeframe",
+      "public": false,
+      "attachments": [],
+      "audit_id": 15410229379,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "web",
+        "source": { "from": {}, "to": {}, "rel": null }
+      },
+      "metadata": {
+        "system": {
+          "client": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36",
+          "ip_address": "208.90.213.211",
+          "location": "San Francisco, CA, United States",
+          "latitude": 37.7758,
+          "longitude": -122.4128
+        },
+        "custom": {}
+      },
+      "created_at": "2015-01-05T16:27:53.000Z"
+    },
+    {
+      "id": 15559259589,
+      "type": "Comment",
+      "author_id": 426904883,
+      "body": "Hi Marissa,\n\nIt was working for a bit and now it isn’t. Just wanted to let you know.\n\nThanks,\n\nTodd",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003e\u003cp dir=\"auto\"\u003eHi Marissa,\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eIt was working for a bit and now it isn’t. Just wanted to let you know.\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eThanks,\u003c/p\u003e\n\n\u003cp dir=\"auto\"\u003eTodd\u003c/p\u003e\u003c/div\u003e",
+      "plain_body": "Hi Marissa, \n\n It was working for a bit and now it isn’t. Just wanted to let you know. \n\n Thanks, \n\n Todd",
+      "public": true,
+      "attachments": [
+        {
+          "url": "https://verbasoftware.zendesk.com/api/v2/attachments/564246959.json",
+          "id": 564246959,
+          "file_name": "image001.jpg",
+          "content_url": "https://verbasoftware.zendesk.com/attachments/token/aM9fqytOjWkISVTqA8TrZIT4t/?name=image001.jpg",
+          "mapped_content_url": "https://verbasoftware.zendesk.com/attachments/token/aM9fqytOjWkISVTqA8TrZIT4t/?name=image001.jpg",
+          "content_type": "image/jpeg",
+          "size": 350,
+          "width": null,
+          "height": null,
+          "inline": false,
+          "deleted": false,
+          "thumbnails": [
+            {
+              "url": "https://verbasoftware.zendesk.com/api/v2/attachments/581027395.json",
+              "id": 581027395,
+              "file_name": "image001_thumb.jpg",
+              "content_url": "https://verbasoftware.zendesk.com/attachments/token/bKkRm5n0n2Ms1LQ2pNjdyNV5g/?name=image001_thumb.jpg",
+              "mapped_content_url": "https://verbasoftware.zendesk.com/attachments/token/bKkRm5n0n2Ms1LQ2pNjdyNV5g/?name=image001_thumb.jpg",
+              "content_type": "image/jpeg",
+              "size": 350,
+              "width": 40,
+              "height": 40,
+              "inline": false,
+              "deleted": false
+            }
+          ]
+        }
+      ],
+      "audit_id": 15559259569,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "email",
+        "source": {
+          "from": {
+            "address": "raymondsmith@clayton.edu",
+            "name": "Raymondsmith",
+            "original_recipients": [
+              "raymondsmith@clayton.edu",
+              "support@verbasoftware.com"
+            ]
+          },
+          "to": {
+            "name": "VitalSource Technologies",
+            "address": "support@verbasoftware.com"
+          },
+          "rel": null
+        }
+      },
+      "metadata": {
+        "system": {
+          "message_id": "\u003cCY1PR0201MB08598201FB973E4DCC39482ACB470@CY1PR0201MB0859.namprd02.prod.outlook.com\u003e",
+          "ip_address": "25.160.142.18",
+          "raw_email_identifier": "148759/5e156f2713462fb64699a2b7849ef85b23df48fe-26522.eml",
+          "location": "United Kingdom",
+          "latitude": 51.5,
+          "longitude": -0.129999999999995
+        },
+        "custom": {},
+        "suspension_type_id": null
+      },
+      "created_at": "2015-01-08T15:56:01.000Z"
+    },
+    {
+      "id": 15560848419,
+      "type": "Comment",
+      "author_id": 348321015,
+      "body": "Hi Ray,\n\nThanks for the update.  This ticket is currently still in our tech team's hands.\n\nOnce I have more information from them.  Thank you for your patience as we investigate!\n\nBest,\n\nMarissa Djafroodi\nCustomer Support Analyst\nVerba Software\nmarissa.djafroodi@verbasoftware.com\n415.738.2374",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003e\u003cp dir=\"auto\"\u003eHi Ray,\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eThanks for the update.  This ticket is currently still in our tech team's hands.\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eOnce I have more information from them.  Thank you for your patience as we investigate!\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eBest,\u003c/p\u003e\n\u003cp dir=\"auto\"\u003eMarissa Djafroodi\u003cbr\u003e\nCustomer Support Analyst\u003cbr\u003e\nVerba Software\u003cbr\u003e\n\u003ca href=\"mailto:marissa.djafroodi@verbasoftware.com\" rel=\"noreferrer\"\u003emarissa.djafroodi@verbasoftware.com\u003c/a\u003e\u003cbr\u003e\n415.738.2374\u003c/p\u003e\u003c/div\u003e",
+      "plain_body": "Hi Ray, \n Thanks for the update.  This ticket is currently still in our tech team's hands. \n Once I have more information from them.  Thank you for your patience as we investigate! \n Best, \n Marissa Djafroodi\n\nCustomer Support Analyst\n\nVerba Software\n\nmarissa.djafroodi@verbasoftware.com\n\n415.738.2374",
+      "public": true,
+      "attachments": [],
+      "audit_id": 15560848389,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "web",
+        "source": { "from": {}, "to": {}, "rel": null }
+      },
+      "metadata": {
+        "system": {
+          "client": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36",
+          "ip_address": "208.90.213.211",
+          "location": "San Francisco, CA, United States",
+          "latitude": 37.7758,
+          "longitude": -122.4128
+        },
+        "custom": {}
+      },
+      "created_at": "2015-01-08T16:24:34.000Z"
+    },
+    {
+      "id": 15561363709,
+      "type": "Comment",
+      "author_id": 426904883,
+      "body": "No worries, Marissa. Since it was working yesterday, I thought maybe you guys had fixed it but hadn’t had time to close the ticket, so I wanted to let you know. Thanks a bunch.",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003e\u003cp dir=\"auto\"\u003eNo worries, Marissa. Since it was working yesterday, I thought maybe you guys had fixed it but hadn’t had time to close the ticket, so I wanted to let you know. Thanks a bunch.\u003c/p\u003e\u003c/div\u003e",
+      "plain_body": "No worries, Marissa. Since it was working yesterday, I thought maybe you guys had fixed it but hadn’t had time to close the ticket, so I wanted to let you know. Thanks a bunch.",
+      "public": true,
+      "attachments": [
+        {
+          "url": "https://verbasoftware.zendesk.com/api/v2/attachments/564354309.json",
+          "id": 564354309,
+          "file_name": "image001.jpg",
+          "content_url": "https://verbasoftware.zendesk.com/attachments/token/cZBUvZMvn5rzI977XGxePYy0Y/?name=image001.jpg",
+          "mapped_content_url": "https://verbasoftware.zendesk.com/attachments/token/cZBUvZMvn5rzI977XGxePYy0Y/?name=image001.jpg",
+          "content_type": "image/jpeg",
+          "size": 350,
+          "width": null,
+          "height": null,
+          "inline": false,
+          "deleted": false,
+          "thumbnails": [
+            {
+              "url": "https://verbasoftware.zendesk.com/api/v2/attachments/581156525.json",
+              "id": 581156525,
+              "file_name": "image001_thumb.jpg",
+              "content_url": "https://verbasoftware.zendesk.com/attachments/token/jPKGHDw4iv21Fd4FZ91X2A3tq/?name=image001_thumb.jpg",
+              "mapped_content_url": "https://verbasoftware.zendesk.com/attachments/token/jPKGHDw4iv21Fd4FZ91X2A3tq/?name=image001_thumb.jpg",
+              "content_type": "image/jpeg",
+              "size": 350,
+              "width": 40,
+              "height": 40,
+              "inline": false,
+              "deleted": false
+            }
+          ]
+        }
+      ],
+      "audit_id": 15561363699,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "email",
+        "source": {
+          "from": {
+            "address": "raymondsmith@clayton.edu",
+            "name": "Raymondsmith",
+            "original_recipients": [
+              "raymondsmith@clayton.edu",
+              "support@verbasoftware.com"
+            ]
+          },
+          "to": {
+            "name": "VitalSource Technologies",
+            "address": "support@verbasoftware.com"
+          },
+          "rel": null
+        }
+      },
+      "metadata": {
+        "system": {
+          "message_id": "\u003cCY1PR0201MB085944E2D41F0C3660694A1ACB470@CY1PR0201MB0859.namprd02.prod.outlook.com\u003e",
+          "ip_address": "25.160.142.18",
+          "raw_email_identifier": "148759/f5d246d2e04de0b1a660a507912a74b7374ee191-20970.eml",
+          "location": "United Kingdom",
+          "latitude": 51.5,
+          "longitude": -0.129999999999995
+        },
+        "custom": {},
+        "suspension_type_id": null
+      },
+      "created_at": "2015-01-08T16:35:20.000Z"
+    },
+    {
+      "id": 31677600855,
+      "type": "Comment",
+      "author_id": 348321015,
+      "body": "Trello card:  https://trello.com/c/YllOV18O/46-fix-dashboardcontroller-bar-chart-slowness",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003e\u003cp dir=\"auto\"\u003eTrello card:  \u003ca href=\"https://trello.com/c/YllOV18O/46-fix-dashboardcontroller-bar-chart-slowness\" rel=\"noreferrer\"\u003ehttps://trello.com/c/YllOV18O/46-fix-dashboardcontroller-bar-chart-slowness\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e",
+      "plain_body": "Trello card:  https://trello.com/c/YllOV18O/46-fix-dashboardcontroller-bar-chart-slowness",
+      "public": false,
+      "attachments": [],
+      "audit_id": 31677600835,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "web",
+        "source": { "from": {}, "to": {}, "rel": null }
+      },
+      "metadata": {
+        "system": {
+          "client": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36",
+          "ip_address": "216.38.139.178",
+          "location": "San Francisco, CA, United States",
+          "latitude": 37.7794,
+          "longitude": -122.417
+        },
+        "custom": {}
+      },
+      "created_at": "2015-07-31T18:56:23.000Z"
+    },
+    {
+      "id": 110079128946,
+      "type": "Comment",
+      "author_id": 348321015,
+      "body": "Solving in favor of Trello card - below!",
+      "html_body": "\u003cdiv class=\"zd-comment\" dir=\"auto\"\u003eSolving in favor of Trello card - below!\u003cbr\u003e\u003c/div\u003e",
+      "plain_body": "Solving in favor of Trello card - below!",
+      "public": false,
+      "attachments": [],
+      "audit_id": 110079128926,
+      "ticket_id": 10048,
+      "via": {
+        "channel": "web",
+        "source": { "from": {}, "to": {}, "rel": null }
+      },
+      "metadata": {
+        "system": {
+          "client": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
+          "ip_address": "216.38.139.178",
+          "location": "San Francisco, CA, United States",
+          "latitude": 37.7957,
+          "longitude": -122.4209
+        },
+        "custom": {}
+      },
+      "created_at": "2016-07-05T21:12:11.000Z"
+    }
+  ]
+}
