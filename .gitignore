@@ -2,3 +2,4 @@ node_modules/
 settings.json
 constantsBACKUP.json
 exampleZdTicket.json
+exampleTicketOnlyMappedFields.json

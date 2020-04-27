@@ -1,3 +1,5 @@
+// Literally the laziest possible way to do this... but I'm dying.
+
 const fs = require("fs");
 
 // get settings from file
@@ -18,9 +20,9 @@ let zdCommentList = [];
 /*
 read lines from the source data
 */
-processLines();
+processComments();
 
-function processLines() {
+function processComments() {
   i = 0; // tracks what line we are processing
   var LineByLineReader = require("line-by-line"),
     lr = new LineByLineReader(filePath);
@@ -37,80 +39,27 @@ function processLines() {
       // console.log(line);
       // console.log("Startline: ", startLine, "i: ", i, "endline ", endLine);
       let ticket = JSON.parse(line);
-      //console.log(ticket.url);
-      let customFields = {};
-      ticket.custom_fields.forEach((cf) => {
-        customFields[cf.id] = cf.value;
+      let comments = ticket.comments;
+      comments.forEach((comment) => {
+        let zdComment = {
+          zdId__c: comment.id,
+          zdPlainBody__c: comment.plain_body.substring(0, 31999),
+          zdPublic__c: comment.public,
+          zdTicketId__c: comment.ticket_id,
+          zdType__c: comment.type,
+          zdAuthorId__c: comment.author_id,
+          zdAuditId__c: comment.audit_id,
+          zdChannel__c: comment.via.channel,
+          zdFromAddress__c: comment.via.source.from.address,
+          zdCreatedAt__c: comment.created_at,
+          zdAttachmentInfo__c: JSON.stringify(comment.attachments).substring(
+            0,
+            31999
+          ),
+          uploadBatch__c: startLine.toString() + "comments",
+        };
+        zdCommentList.push(zdComment);
       });
-      // console.log(customFields);
-      let zdTicket = {
-        url__c: ticket.url, // str
-        zendeskId__c: ticket.id, // str
-        zdExternal_Id__c: ticket.external_id,
-        zdChannel__c: ticket.via.channel,
-        // via__c: JSON.stringify(ticket.via), // JSON str
-        zdCreatedAt__c: ticket.created_at, // datetime
-        zdUpdatedAt__c: ticket.updated_at, // datetime
-        zdSubject__c: ticket.subject.substring(0, 31999), // str
-        zdDescription__c: ticket.description.substring(0, 31999),
-        zdType__c: ticket.type, // str
-        zdPriority__c: ticket.priority, // str
-        zdStatus__c: ticket.status, // str
-        // zdHasIncidents__c: ticket.hasIncidents, // bool
-        zdIsPublic__c: ticket.is_public, // bool
-        // zdDue_At__c: ticket.due_at,
-        zdTags__c: JSON.stringify(ticket.tags), // JSON str
-        zdCustomFields__c:
-          JSON.stringify(ticket.custom_fields).length > 31999
-            ? "TOO LONG TO UPLOAD"
-            : JSON.stringify(ticket.custom_fields),
-        // zdFields__c: JSON.stringify(ticket.fields),
-        // zdMetricSet__c: JSON.stringify(ticket.metric_set),
-        zdSolved_At__c: ticket.dates.solved_at, // Datetime
-        zdSubmitterId__c:
-          ticket.submitter && ticket.submitter.id ? ticket.submitter.id : null,
-        zdSubmitterName__c:
-          ticket.submitter && ticket.submitter.name
-            ? ticket.submitter.name
-            : null,
-        zdSubmitterEmail__c:
-          ticket.submitter && ticket.submitter.email
-            ? ticket.submitter.email
-            : null,
-        zdSubmitterPhone__c:
-          ticket.submitter && ticket.submitter.phone
-            ? ticket.submitter.phone
-            : null,
-        zdAssigneeId__c:
-          ticket.assignee && ticket.assignee.id ? ticket.assignee.id : null,
-        zdAssigneeName__c:
-          ticket.assignee && ticket.assignee.name ? ticket.assignee.name : null,
-        zdAssigneeEmail__c:
-          ticket.assignee && ticket.assignee.email
-            ? ticket.assignee.email
-            : null,
-        zdOrganizationId__c:
-          ticket.organization && ticket.organization.id
-            ? ticket.organization.id
-            : null,
-        zdOrganizationName__c:
-          ticket.organization && ticket.organization.name
-            ? ticket.organization.name
-            : null,
-        zdEmailCcIds__c: JSON.stringify(ticket.email_cc_ids),
-        zdCustomField1__c: customFields["21023071"],
-        zdCustomField2__c: customFields["21114815"],
-        zdCustomField3__c: customFields["24137665"],
-        // don't know the below field types
-        zdCustomField4__c: customFields["24271449"],
-        zdCustomField5__c: customFields["24330089"],
-        zdCustomField6__c: customFields["25060883"],
-        zdCustomField7__c: customFields["25393126"],
-        zdCustomField8__c: customFields["360016965151"],
-        zdCustomField9__c: customFields["360020204612"],
-        uploadBatch__c: startLine.toString(),
-      };
-      zdTicketList.push(zdTicket);
     } else if (i >= endLine) {
       lr.close();
     }
@@ -145,9 +94,9 @@ function sendToSF() {
       accessToken: token,
     });
 
-    var job = conn.bulk.createJob("ZendeskTicketJSON__c", "insert");
+    var job = conn.bulk.createJob("ZendeskComment__c", "insert");
     var batch = job.createBatch();
-    batch.execute(zdTicketList);
+    batch.execute(zdCommentList);
     batch.on("queue", function (batchInfo) {
       // fired when batch request is queued in server.
       console.log("batchInfo:", batchInfo);
@@ -155,7 +104,6 @@ function sendToSF() {
       // jobId = batchInfo.jobId;
       // ...
     });
-
     // update settings.json for next run
     // update any errors in error file
     finishJob();
@@ -191,7 +139,7 @@ function finishJob() {
   newSettingsObj.instanceUrl = instanceUrl;
 
   fs.writeFile(
-    errorFilePath + "_" + startLine,
+    errorFilePath + "_comments_" + startLine,
     JSON.stringify(errorList, null, 2),
     (err) => {
       if (err) {
