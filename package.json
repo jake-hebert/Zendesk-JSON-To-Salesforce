@@ -4,12 +4,14 @@
   "description": "manages zendesk json to sf objects",
   "main": "index.js",
   "scripts": {
-    "loader": "node load.js"
+    "loader": "node load.js",
+    "comment-loader": "node loadComments.js"
   },
   "author": "jake",
   "license": "ISC",
   "dependencies": {
     "jsforce": "^1.9.3",
-    "line-by-line": "^0.1.6"
+    "line-by-line": "^0.1.6",
+    "line-reader": "^0.4.0"
   }
 }
