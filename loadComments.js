@@ -42,7 +42,7 @@ function processComments() {
       let comments = ticket.comments;
       comments.forEach((comment) => {
         let zdComment = {
-          zdId__c: comment.id,
+          zdCommentId__c: comment.id,
           zdPlainBody__c: comment.plain_body.substring(0, 31999),
           zdPublic__c: comment.public,
           zdTicketId__c: comment.ticket_id,
@@ -68,46 +68,28 @@ function processComments() {
 
   lr.on("end", function () {
     // All lines are read, file is closed now.
+    console.log("Sending comments to sfdc");
     sendToSF();
   });
 }
 
-function sendToSF() {
+async function sendToSF() {
   var jsforce = require("jsforce");
-  var conn = new jsforce.Connection({
-    loginUrl: loginUrl,
+  let conn = new jsforce.Connection({
+    instanceUrl: instanceUrl,
+    accessToken: token,
   });
-
-  if (
-    instanceUrl === undefined ||
-    instanceUrl === "" ||
-    token === undefined ||
-    token === ""
-  ) {
-    console.log("doing initial connection");
-    conn = connectToSf(conn);
-    console.log(instanceUrl);
-    console.log(token);
-  } else {
-    conn = new jsforce.Connection({
-      instanceUrl: instanceUrl,
-      accessToken: token,
-    });
-
-    var job = conn.bulk.createJob("ZendeskComment__c", "insert");
-    var batch = job.createBatch();
-    batch.execute(zdCommentList);
-    batch.on("queue", function (batchInfo) {
-      // fired when batch request is queued in server.
-      console.log("batchInfo:", batchInfo);
-      // batchId = batchInfo.id;
-      // jobId = batchInfo.jobId;
-      // ...
-    });
-    // update settings.json for next run
-    // update any errors in error file
+  var job = conn.bulk.createJob("ZendeskComment__c", "insert");
+  var batch = job.createBatch();
+  console.log("batch created");
+  batch.execute(zdCommentList);
+  batch.on("queue", async function (batchInfo) {
+    // fired when batch request is queued in server.
+    console.log("batchInfo:", batchInfo);
+    await job.close();
+    console.log("job closed");
     finishJob();
-  }
+  });
 }
 
 async function connectToSf(conn) {

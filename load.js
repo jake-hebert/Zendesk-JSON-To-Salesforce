@@ -60,10 +60,10 @@ function processLines() {
         zdIsPublic__c: ticket.is_public, // bool
         // zdDue_At__c: ticket.due_at,
         zdTags__c: JSON.stringify(ticket.tags), // JSON str
-        zdCustomFields__c:
-          JSON.stringify(ticket.custom_fields).length > 31999
-            ? "TOO LONG TO UPLOAD"
-            : JSON.stringify(ticket.custom_fields),
+        // zdCustomFields__c:
+        // JSON.stringify(ticket.custom_fields).length > 31999
+        //   ? "TOO LONG TO UPLOAD"
+        //   : JSON.stringify(ticket.custom_fields),
         // zdFields__c: JSON.stringify(ticket.fields),
         // zdMetricSet__c: JSON.stringify(ticket.metric_set),
         zdSolved_At__c: ticket.dates.solved_at, // Datetime
@@ -108,7 +108,7 @@ function processLines() {
         zdCustomField7__c: customFields["25393126"],
         zdCustomField8__c: customFields["360016965151"],
         zdCustomField9__c: customFields["360020204612"],
-        uploadBatch__c: startLine.toString(),
+        uploadBatch__c: "TESTING-" + startLine.toString(),
       };
       zdTicketList.push(zdTicket);
     } else if (i >= endLine) {
@@ -145,7 +145,7 @@ function sendToSF() {
       accessToken: token,
     });
 
-    var job = conn.bulk.createJob("ZendeskTicketJSON__c", "insert");
+    var job = conn.bulk.createJob("ZendeskTicket__c", "insert");
     var batch = job.createBatch();
     batch.execute(zdTicketList);
     batch.on("queue", function (batchInfo) {
